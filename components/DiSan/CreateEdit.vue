@@ -1,14 +1,12 @@
 <template>
   <div>
     <CCard>
-      <CCardHeader>
-        {{ title }}
-      </CCardHeader>
+   
       <CCardBody>
         <CRow>
          
           <CCol sm="6">
-            <label for="source">Loai Di San</label>
+            <label for="source">Loại di sản</label>
                <select class="custom-select" v-model="dataForm.loai_id">
               <option
                 v-for="(category, index) in dataCatagory"
@@ -23,7 +21,7 @@
               </p>     
           </CCol>
           <CCol sm="6">
-            <label for="source">Cấp Di San</label>
+            <label for="source">Cấp di sản</label>
                <select class="custom-select" v-model="dataForm.cap_id">
               <option
                 v-for="(rank, index) in dataRank"
@@ -41,7 +39,7 @@
          <CRow>
           <CCol sm="12">
             <CInput
-              label="Ten Di San"
+              label="Tên di sản"
               v-model="dataForm.ten"
               type="text"
               placeholder="Enter your name"
@@ -54,7 +52,7 @@
          <CRow>
           <CCol sm="12">
             <CInput
-              label="Mo Ta"
+              label="Mô tả"
               v-model="dataForm.mota"
               type="text"
               placeholder="Enter your name"
@@ -67,7 +65,7 @@
          <CRow>
           <CCol sm="12">
             <CInput
-              label="Luot Xem"
+              label="Lượt xem"
               v-model="dataForm.luotxem"
               type="number"
               min = "0"
@@ -78,7 +76,7 @@
          <CRow>
           <CCol sm="12">
             <CInput
-              label="Xa , Phuong, Thi Tran"
+              label="Xã, Phường"
               v-model="dataForm.xa"
               type="text"
               placeholder="Enter your name"
@@ -91,7 +89,7 @@
          <CRow>
           <CCol sm="12">
             <CInput
-              label="Huyen, Quan"
+              label="Huyện, Quận"
               v-model="dataForm.huyen"
               type="text"
               placeholder="Enter your name"
@@ -106,7 +104,7 @@
             <CInputFile
               id ="file"
               name = "file"
-              label="anh"
+              label="Ảnh"
               v-model="dataForm.anh"
               placeholder="Enter your name"
             />
@@ -137,7 +135,7 @@
           color="primary"
           @click="add()"
         >
-          Submit
+          Thêm Mới
         </CButton>
         <CButton
           v-else
@@ -145,7 +143,13 @@
           class="btn-click"
           @click="edit(dataForm)"
         >
-          Update
+          Cập Nhật
+        </CButton>
+        <CButton
+          color="primary"
+          nuxt-link to="/disan"
+        >
+          Hủy
         </CButton>
       </CCardFooter>
     </CCard>

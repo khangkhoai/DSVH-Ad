@@ -1,13 +1,16 @@
 <template>
-  <Dashboard />
+   <div>
+    <div>My blog navigation bar here</div>
+    <Nuxt />
+  </div>
 </template>
 
 <script>
-import Dashboard from './Dashboard'
-
 export default {
-  components: {
-    Dashboard
-  }
+ layout: 'login'
 }
 </script>
+
+<style>
+
+</style>

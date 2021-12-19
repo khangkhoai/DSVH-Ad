@@ -19,20 +19,9 @@
     />
     <CHeaderNav class="d-md-down-none mr-auto">
       <CHeaderNavItem class="px-3">
-        <CHeaderNavLink to="">
-          Dashboard
-        </CHeaderNavLink>
+         <span class="navbar-brand mb-0 h1">Hệ thống quản lý Di sản văn hóa</span>
       </CHeaderNavItem>
-      <CHeaderNavItem class="px-3">
-        <CHeaderNavLink to="" exact>
-          Users
-        </CHeaderNavLink>
-      </CHeaderNavItem>
-      <CHeaderNavItem class="px-3">
-        <CHeaderNavLink>
-          Settings
-        </CHeaderNavLink>
-      </CHeaderNavItem>
+     
     </CHeaderNav>
     <CHeaderNav class="mr-4">
       <CHeaderNavItem class="d-md-down-none mx-2">

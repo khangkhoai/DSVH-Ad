@@ -41,7 +41,12 @@ export default [
         to: '/DanhGia/',
         icon: 'cil-pencil'
       },
-      
+      {
+        _name: 'CSidebarNavItem',
+        name: 'Thống Kê',
+        to: '/ThongKe/',
+        icon: 'cil-pencil'
+      },
     ]
   }
 ]

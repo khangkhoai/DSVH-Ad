@@ -74,6 +74,7 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      transpile: [/^gmap-vue($|\/)/]
     }
   },
 //   auth: {

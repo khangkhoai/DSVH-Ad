@@ -7,12 +7,7 @@
   >
     <template #toggler>
       <CHeaderNavLink>
-        <div class="c-avatar">
-          <img
-            src="img/avatars/6.jpg"
-            class="c-avatar-img "
-          >
-        </div>
+        <CAvatar color="secondary" size="xl">User</CAvatar>
       </CHeaderNavLink>
     </template>
     <CDropdownHeader tag="div" class="text-center" color="light">
@@ -47,9 +42,13 @@
 
 <script>
 import { freeSet } from "@coreui/icons";
+
 export default {
   name: 'TheHeaderDropdownAccnt',
    icons: { freeSet },
+  
+  
+
   data () {
     return {
       itemsCount: 42
